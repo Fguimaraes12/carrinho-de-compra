@@ -9,6 +9,8 @@ Aplicação de carrinho de compras desenvolvida com foco em boas práticas de fr
 - React
 - Tailwind CSS
 - Context API
+- axios
+  
 
 ---
 
