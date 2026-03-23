@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Carrinho de Compras - Next.js + TypeScript
 
-## Getting Started
+Aplicação de carrinho de compras desenvolvida com foco em boas práticas de front-end, organização de código e gerenciamento de estado.
 
-First, run the development server:
+## 🚀 Tecnologias utilizadas
+
+- Next.js
+- TypeScript
+- React
+- Tailwind CSS
+- Context API
+
+---
+
+## 📌 Funcionalidades
+
+- Adicionar produtos ao carrinho
+- Remover produtos do carrinho
+- Atualizar quantidade de itens
+- Cálculo automático do total
+- Interface responsiva
+
+---
+
+## 🧠 Objetivo do projeto
+
+Este projeto foi desenvolvido com o objetivo de:
+
+- Praticar conceitos de React e Next.js
+- Aplicar tipagem com TypeScript
+- Trabalhar gerenciamento de estado global
+- Simular uma aplicação real de e-commerce
+
+---
+
+## ⚙️ Como rodar o projeto
 
 ```bash
+# Clonar o repositório
+git clone https://github.com/Fguimaraes12/carrinho-de-compra.git
+
+# Entrar na pasta
+cd nome-da-pasta
+
+# Instalar dependências
+npm install
+
+# Rodar o projeto
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧩 Aprendizados
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Durante o desenvolvimento, foram trabalhados:
 
-## Learn More
+- Organização de projeto em escala
+- Separação de responsabilidades
+- Boas práticas com componentes
+- Manipulação de estado complexo
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 Licença
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este projeto está sob a licença MIT.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✍️ Autor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido por você 🚀
