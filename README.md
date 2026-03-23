@@ -55,19 +55,13 @@ npm run dev
 
 Durante o desenvolvimento, foram trabalhados:
 
-- Organização de projeto em escala
-- Separação de responsabilidades
-- Boas práticas com componentes
-- Manipulação de estado complexo
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT.
+-
+-
+-
+-
 
 ---
 
 ## ✍️ Autor
 
-Desenvolvido por você 🚀
+Desenvolvido por Fguimaraes12 🚀
