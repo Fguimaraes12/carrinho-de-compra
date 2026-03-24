@@ -64,6 +64,3 @@ Durante o desenvolvimento, foram trabalhados:
 
 ---
 
-## ✍️ Autor
-
-Desenvolvido por Fguimaraes12 🚀
