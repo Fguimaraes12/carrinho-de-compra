@@ -2,17 +2,13 @@
 
 import { createContext, useState, useContext } from "react";
 import { Product } from "../types/product";
-
-interface CartContextType {
-  cart: Product[];
-  addToCart: (product: Product) => void;
-}
-
-const CartContext = createContext<CartContextType | null>(null);
+import { CartContextType } from "../types/contextCart";
 
 type prop = {
   children: React.ReactNode;
 };
+
+const CartContext = createContext<CartContextType | null>(null);
 
 export function CartProvider({ children }: prop) {
   const [cart, setCart] = useState<Product[]>([]);
@@ -23,8 +19,13 @@ export function CartProvider({ children }: prop) {
     });
   };
 
+  const removeFromCart = (id: number) => {
+    const value = cart.filter((item) => item.id !== id);
+    setCart(value);
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );
