@@ -5,13 +5,15 @@ import { useCart } from "../contexts/cartContext";
 
 function Header() {
   const { cart } = useCart();
+  const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
+
   return (
     <div>
       <Link href={"/cart"}>
-        carrinho: {cart.length}
+        carrinho:
         {cart.length > 0 && (
-          <span className="absolute -top-2 -right-2 bg-red-500 text-xs rounded-full w-6 h-6 flex items-center justify-center">
-            {cart.length}
+          <span className=" bg-red-500 text-xs rounded-full w-6 h-6 flex items-center justify-center">
+            {totalQuantity}
           </span>
         )}
       </Link>
