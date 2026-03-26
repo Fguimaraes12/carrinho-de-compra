@@ -18,6 +18,7 @@ function CartPage() {
             <h1>{item.title}</h1>
             <p>{item.description}</p>
             <span>{item.price}</span>
+            <span className="text-yellow-300">{item.quantity}</span>
             <button
               onClick={() => removeFromCart(item.id)}
               className="p-2 text-red-500"
