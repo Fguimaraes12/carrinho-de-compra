@@ -13,6 +13,24 @@ const CartContext = createContext<CartContextType | null>(null);
 export function CartProvider({ children }: prop) {
   const [cart, setCart] = useState<Product[]>([]);
 
+  const incrementQuantity = (id: number) => {
+    setCart((prev) =>
+      prev.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item,
+      ),
+    );
+  };
+
+  const decrementQuantity = (id: number) => {
+    setCart((prev) =>
+      prev
+        .map((item) =>
+          item.id === id ? { ...item, quantity: item.quantity - 1 } : item,
+        )
+        .filter((item) => item.quantity > 0),
+    );
+  };
+
   const addToCart = (product: Product) => {
     setCart((prev) => {
       const existingItem = prev.find((item) => item.id === product.id);
@@ -39,7 +57,15 @@ export function CartProvider({ children }: prop) {
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider
+      value={{
+        cart,
+        addToCart,
+        removeFromCart,
+        incrementQuantity,
+        decrementQuantity,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );
