@@ -13,23 +13,33 @@ function ProductsListClient({ initialProducts }: ProductsProps) {
   console.log(cart);
 
   return (
-    <div>
-      <ul>
+    <div className="flex justify-center bg-gray-100">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-6">
         {initialProducts.map((product) => (
           <li
             key={product.id}
-            className="border-2 border-blue-500 rounded-lg p-4 m-4"
+            className="bg-white shadow-sm hover:shadow-md transition p-4 flex flex-col"
           >
-            <h1>{product.title}</h1>
-            <p>{product.description}</p>
-            <span>{product.price}</span>
+            <img
+              src={product.images?.[0] || "/fallback.png"}
+              alt={product.title}
+              className="w-full h-102 object-cover mb-4"
+            />
+
+            <h1 className="text-base font-medium text-black mb-2 line-clamp-2">
+              {product.title}
+            </h1>
+
+            <span className="text-lg font-semibold text-black mb-4">
+              R$ {product.price}
+            </span>
+
             <button
-              className="border-2 border-green-300 rounded-2xl p-2 ml-2 cursor-pointer"
+              className="mt-auto bg-black text-white py-2 hover:bg-zinc-800 transition cursor-pointer"
               onClick={() => addToCart(product)}
             >
-              Adicionar carrinho
+              Add to cart
             </button>
-            <br />
           </li>
         ))}
       </ul>
