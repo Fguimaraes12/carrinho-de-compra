@@ -21,9 +21,9 @@ function ProductsListClient({ initialProducts }: ProductsProps) {
             className="bg-white shadow-sm hover:shadow-md transition p-4 flex flex-col"
           >
             <img
-              src={product.images?.[0] || "/fallback.png"}
+              src={product.image}
               alt={product.title}
-              className="w-full h-102 object-cover mb-4"
+              className="w-full h-102 object-contain mb-4"
             />
 
             <h1 className="text-base font-medium text-black mb-2 line-clamp-2">
