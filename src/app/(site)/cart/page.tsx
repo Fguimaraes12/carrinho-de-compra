@@ -1,6 +1,6 @@
 "use client";
 
-import { useCart } from "../../contexts/cartContext";
+import { useCart } from "../../../contexts/cartContext";
 import Link from "next/link";
 
 function CartPage() {
