@@ -4,7 +4,7 @@ export interface Product {
   description: string;
   price: number;
   quantity: number;
-  images: string;
+  image: string;
 }
 
 export type ProductsResponse = {
