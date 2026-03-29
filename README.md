@@ -53,14 +53,5 @@ npm run dev
 
 ---
 
-## 🧩 Aprendizados
 
-Durante o desenvolvimento, foram trabalhados:
-
--
--
--
--
-
----
 
